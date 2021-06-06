@@ -46,12 +46,12 @@ NULL
 ##        Note: Only Workspace Owners/Admins have access to do this.
 ##    Number
 cu_get_time_entries_within_date_range <- function(team_id,
-start_date, end_date, assignee) {
+start_date = NULL, end_date = NULL, assignee = NULL) {
     .cu_get("team", team_id, "time_entries",
-        query = list(
+        query = purrr::compact(list(
             "start_date"=start_date,
             "end_date"=end_date,
-            "assignee"=assignee))
+            "assignee"=assignee)))
 }
 
 
