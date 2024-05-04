@@ -37,8 +37,8 @@ cuf_get_tasks <- function(list_id, archived=FALSE, ..., cu_token = NULL) {
 
 #' @export
 #' @rdname api-tasks
-cuf_get_task <- function(task_id, cu_token = NULL) {
-    out <- cu_get_task(task_id, cu_token = cu_token)
+cuf_get_task <- function(task_id, ..., cu_token = NULL) {
+    out <- cu_get_task(task_id, ..., cu_token = cu_token)
     tibblify(list(out), spec_tasks)
 }
 
