@@ -62,9 +62,15 @@ cu_delete_time_entry(team_id, timer_id, cu_token = NULL)
 
 cu_update_time_entry(team_id, timer_id, ..., cu_token = NULL)
 
-cuf_get_time_entries_within_date_range(team_id, start_date, end_date, assignee)
+cuf_get_time_entries_within_date_range(
+  team_id,
+  start_date,
+  end_date,
+  assignee,
+  cu_token = NULL
+)
 
-cuf_get_singular_time_entry(team_id, timer_id)
+cuf_get_singular_time_entry(team_id, timer_id, cu_token = NULL)
 
 cuf_get_time_entry_history(team_id, timer_id)
 

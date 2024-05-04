@@ -8,7 +8,7 @@
 \usage{
 cu_get_teams(cu_token = NULL)
 
-cuf_get_teams()
+cuf_get_teams(cu_token = NULL)
 }
 \arguments{
 \item{cu_token}{ClickUp personal access token or an access token from the OAuth flow.

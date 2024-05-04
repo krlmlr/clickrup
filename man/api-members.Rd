@@ -12,9 +12,9 @@ cu_get_task_members(task_id, cu_token = NULL)
 
 cu_get_list_members(list_id, cu_token = NULL)
 
-cuf_get_task_members(task_id)
+cuf_get_task_members(task_id, cu_token = NULL)
 
-cuf_get_list_members(list_id)
+cuf_get_list_members(list_id, cu_token = NULL)
 }
 \arguments{
 \item{task_id}{Task ID.}

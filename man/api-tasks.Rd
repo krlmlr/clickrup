@@ -28,17 +28,17 @@ cu_get_task(task_id, cu_token = NULL)
 
 cu_get_filtered_team_tasks(team_id, ..., cu_token = NULL)
 
-cuf_create_task(list_id, ...)
+cuf_create_task(list_id, ..., cu_token = NULL)
 
-cuf_update_task(task_id, ...)
+cuf_update_task(task_id, ..., cu_token = NULL)
 
 cuf_delete_task(task_id)
 
-cuf_get_tasks(list_id, archived = FALSE, ...)
+cuf_get_tasks(list_id, archived = FALSE, ..., cu_token = NULL)
 
-cuf_get_task(task_id)
+cuf_get_task(task_id, cu_token = NULL)
 
-cuf_get_filtered_team_tasks(team_id, ...)
+cuf_get_filtered_team_tasks(team_id, ..., cu_token = NULL)
 }
 \arguments{
 \item{list_id}{List ID.}

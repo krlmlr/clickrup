@@ -32,19 +32,19 @@ cu_get_lists_folderless(space_id, archived = FALSE, cu_token = NULL)
 
 cu_get_list(list_id, cu_token = NULL)
 
-cuf_create_list(folder_id, ...)
+cuf_create_list(folder_id, ..., cu_token = NULL)
 
-cuf_create_folderless_list(space_id, ...)
+cuf_create_folderless_list(space_id, ..., cu_token = NULL)
 
-cuf_update_list(list_id, ...)
+cuf_update_list(list_id, ..., cu_token = NULL)
 
 cuf_delete_list(list_id, ...)
 
-cuf_get_lists(folder_id, archived = FALSE)
+cuf_get_lists(folder_id, archived = FALSE, cu_token = NULL)
 
-cuf_get_lists_folderless(space_id, archived = FALSE)
+cuf_get_lists_folderless(space_id, archived = FALSE, cu_token = NULL)
 
-cuf_get_list(list_id)
+cuf_get_list(list_id, cu_token = NULL)
 }
 \arguments{
 \item{folder_id}{Folder ID.}

@@ -24,15 +24,15 @@ cu_get_folders(space_id, archived = FALSE, cu_token = NULL)
 
 cu_get_folder(folder_id, cu_token = NULL)
 
-cuf_create_folder(space_id, name)
+cuf_create_folder(space_id, name, cu_token = NULL)
 
-cuf_update_folder(folder_id, name)
+cuf_update_folder(folder_id, name, cu_token = NULL)
 
 cuf_delete_folder(folder_id, name)
 
-cuf_get_folders(space_id, archived = FALSE)
+cuf_get_folders(space_id, archived = FALSE, cu_token = NULL)
 
-cuf_get_folder(folder_id)
+cuf_get_folder(folder_id, cu_token = NULL)
 }
 \arguments{
 \item{space_id}{Space ID.}

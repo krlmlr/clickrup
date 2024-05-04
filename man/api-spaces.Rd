@@ -24,15 +24,15 @@ cu_get_spaces(team_id, archived = FALSE, cu_token = NULL)
 
 cu_get_space(space_id, cu_token = NULL)
 
-cuf_create_space(team_id, name, ...)
+cuf_create_space(team_id, name, ..., cu_token = NULL)
 
-cuf_update_space(space_id, ...)
+cuf_update_space(space_id, ..., cu_token = NULL)
 
 cuf_delete_space(space_id)
 
-cuf_get_spaces(team_id, archived = FALSE)
+cuf_get_spaces(team_id, archived = FALSE, cu_token = NULL)
 
-cuf_get_space(space_id)
+cuf_get_space(space_id, cu_token = NULL)
 }
 \arguments{
 \item{team_id}{Team ID.}
