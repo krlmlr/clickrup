@@ -7,6 +7,7 @@ spec_tasks <- tspec_df(
     tib_chr("description"),
     tib_row(
         "status",
+        tib_chr("id"),
         tib_chr("status"),
         tib_chr("color"),
         tib_chr("type"),
@@ -35,7 +36,16 @@ spec_tasks <- tspec_df(
         tib_chr("email"),
         tib_chr("profilePicture"),
     ),
-    # tib_unspecified("watchers"),
+    # tib_unspecified("group_assignees"),
+    tib_df(
+        "watchers",
+        tib_chr("id", transform = as.character, ptype_inner = integer()),
+        tib_chr("username"),
+        tib_chr("color"),
+        tib_chr("initials"),
+        tib_chr("email"),
+        tib_chr("profilePicture"),
+    ),
     tib_df(
         "checklists",
         tib_chr("id"),
@@ -206,4 +216,5 @@ spec_tasks <- tspec_df(
         "space",
         tib_chr("id"),
     ),
+    # tib_unspecified("attachments"),
 )
