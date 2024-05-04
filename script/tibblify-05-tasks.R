@@ -19,13 +19,14 @@ df_folder
 df_list <- cuf_get_lists(df_folder$id[[1]])
 df_list
 
-df_tasks <- cuf_get_tasks(df_list$id[[1]])
+df_tasks <- cuf_get_tasks(df_list$id[[1]], include_subtasks = TRUE)
 df_tasks
 df_tasks$priority
 df_tasks$custom_fields[[1]]
 df_tasks$dependencies[[1]]
 df_tasks$sharing
 df_tasks$sharing$public_fields[[1]]
+df_tasks$subtasks
 
 df_all_tasks <- cuf_get_filtered_team_tasks(df_teams$id[[1]], include_closed = TRUE, subtasks = TRUE)
 df_all_tasks
