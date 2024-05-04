@@ -74,6 +74,13 @@
 
 ## convenience function for GET requests
 .cu_get_page <- function(..., query=list(), cu_token = NULL) {
+    query <- lapply(query, function(.x) {
+        if (is.logical(.x)) {
+            .x <- if (.x) "true" else "false"
+        }
+        .x
+    })
+
     resp <- .rate_insist(httr::GET(
             httr::modify_url(getOption("cu_options")$baseurl,
                        path = .cu_path(...),
