@@ -261,7 +261,9 @@ spec_tasks <- tspec_df(
         tib_custom("start_date", cu_date_from),
         # tib_unspecified("points"),
         # tib_unspecified("time_estimate"),
-        tib_int("time_spent"),
+        # FIXME: Seen this field as string and integer in two subtasks of the same task
+        # How to handle in tibblify?
+        # tib_dbl("time_spent", transform = as.numeric, ptype_inner = list(), required = FALSE),
         # tib_unspecified("custom_fields"),
         # tib_unspecified("dependencies"),
         # tib_unspecified("linked_tasks"),
